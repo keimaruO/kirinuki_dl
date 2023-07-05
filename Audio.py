@@ -3,13 +3,12 @@ import subprocess
 import sys
 
 def main(url):
-    # yt-dlpコマンドのやつら
     cmd = " ".join([
         "yt-dlp",
         "-f", "\"bestaudio/best\"",
         "--extract-audio",
         "--audio-format", "wav",
-        "-o", "E:\\%(title)s.%(ext)s",
+        "-o", "%(title)s.%(ext)s",
         url
     ])
 
