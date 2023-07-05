@@ -2,7 +2,8 @@
 
 
 
-yt-dlp.exe のやつDLして。　
+yt-dlp.exe のやつDLして。
+
 https://github.com/yt-dlp/yt-dlp/releases/
 
 
