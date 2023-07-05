@@ -19,7 +19,11 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 
 # インストール方法
 
-矢印のをダウンロードして、展開 ※画像はこのページの上部です
+まず前提としてPythonをいれる必要があります。簡単です
+
+> [Python](https://prog-8.com/docs/python-env-win)　※インストール方法が書いてあるサイト
+
+## 矢印のをダウンロードして展開 ※画像はこのページの上部です
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/df0e07ee-db73-4154-be3a-e5328d2927f3)
 
@@ -48,7 +52,7 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 # 使い方
 
-!Audio.bat - ショートカット.lnk　とかのやつらをダブルクリックするとコマンドラインが開くのでそこにURLを貼り付けるだけ
+!Audio.bat - ショートカット.lnk　とかのやつらをダブルクリックするとコマンドラインが開くのでそこにURLを貼り付けるだけ。ちな説明すると、.batを起動するためのショートカットです
 
 ※!Section.batの使い方だけちょい違う
 
@@ -71,9 +75,23 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 指定した範囲だけをDL
 
-dlurl.txtの1行目にURL、2行目に時間の範囲指定をすればその箇所だけDL、dlurl.txtに複数記入してもおｋ
+dlurl.txtの1行目にURL、2行目に時間の範囲指定を書く。
 
-#　カスタムのやり方
+で、
+
+で、!Section.batを起動する
+
+ちな、dlurl.txtに複数記入してもおｋ
+
+- 1行目　URL
+- 2行目　xx:xx-xx:xx
+- 3行目　URL
+- 4行目　xx:xx-xx:xx
+- ...
+
+って感じ
+
+# カスタムのやり方
 
 ファイル形式をmp3とかopusとかにしたい場合はそのコードを変更すればいいだけです。これまじで簡単です。
 
@@ -81,7 +99,7 @@ dlurl.txtの1行目にURL、2行目に時間の範囲指定をすればその箇
 
 それ以外は、基本的にchatGPT君に〇〇のようにしたいんだけどって、ソースコードと一緒に要件をお願いすると書いてくれます
 
-chatGPTのリンク貼っときます　https://chat.openai.com/
+chatGPTのリンク貼っときます。https://chat.openai.com/
 
 ではまた。
 
