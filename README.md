@@ -23,9 +23,9 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 
 > [Python](https://prog-8.com/docs/python-env-win)　※インストール方法が書いてあるサイト
 
-## 矢印のをダウンロードして展開 ※画像はこのページの上部です
+## このプロジェクトをダウンロードする ※画像はこのページの上部です
 
-![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/df0e07ee-db73-4154-be3a-e5328d2927f3)
+![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/9f4d7d1e-f629-4af1-bf0a-692569d5f8b1)
 
 
 次に
@@ -34,7 +34,8 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 
 https://github.com/yt-dlp/yt-dlp/releases/
 
-![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/fca104af-6d5e-4cfb-86d7-671e51e5886f)
+![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/ae976dc8-d68e-4b9d-89c4-5cf838cf5eda)
+
 
 次に
 
@@ -42,11 +43,14 @@ https://github.com/yt-dlp/yt-dlp/releases/
 
 https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
-![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/004ffaa4-780c-45f4-a423-378238340c98)
+![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/5c309489-25c6-45f7-93f1-f0d8c36489dc)
 
-そしてダウンロードしてきたのを解凍し、下の画像のように配置すればOK
 
-![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/0b1172b5-80c6-42f3-864f-eac56cd35197)
+そして上のやつでダウンロードしてきたの者たちを解凍し、下の画像のように配置すればOK
+
+![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/0dc46007-870b-4394-a069-a5e2a13df082)
+
+
 
 ショートカットをデスクトップとか、わかりやすいところに置いておいて下さい。ファイル名も自分がわかりやすいのに変えてもおｋ
 
