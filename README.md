@@ -10,11 +10,10 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 - 動画・音声だけDL
 - 特定の範囲だけDL
 
-できます。
 
-デフォルトだと最高画質最高画質です。ファイル形式は動画ならmp4,音声ならwav
+デフォルトだと最高画質最高画質でDLします。ファイル形式は動画ならmp4,音声ならwav
 
-うざいくらいに何回も言いますが好きなようにファイル形式変えれます。
+自分で好きなようにファイル形式、保存先変えれます。
 
 # インストール方法
 
@@ -39,8 +38,27 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/004ffaa4-780c-45f4-a423-378238340c98)
 
-そしてダウンロードしてきた最終的に下の画像のようになればOK
+そしてダウンロードしてきたのを解凍し、下の画像のように配置すればOK
 
-![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/1eebc098-8238-4a77-b0e3-effc160cd0d7)
+![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/0b1172b5-80c6-42f3-864f-eac56cd35197)
 
 
+# 使い方
+
+ショートカットをデスクトップとか、わかりやすいところに置いておいて下さい。ファイル名も自分がわかりやすいのに変えてもおｋ
+
+- !Audio.bat - ショートカット.lnk
+
+wavで音声だけDL
+
+- !Live-wait.bat - ショートカット.lnk
+
+ライブ追いかけmp4でDL。枠がたっていてまだ配信が開始してなくても、配信開始されると自動で録画してくれる
+
+- !Section.bat - ショートカット.lnk
+
+指定した範囲をDL。dlurl.txtの1行目にURL、2行目に時間の範囲指定をすればその箇所だけDL、dlurl.txtに複数記入しても
+
+- !Video.bat - ショートカット.lnk
+
+mp4で動画だけDL
