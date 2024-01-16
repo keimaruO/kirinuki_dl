@@ -203,7 +203,7 @@ yt-dlp https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
 
 Chromeの場合
 ```
-yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
+yt-dlp --cookies-from-browser chrome https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
 ```
 
 <br>
