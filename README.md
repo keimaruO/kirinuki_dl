@@ -55,7 +55,7 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 _Audio.bat　とか　_Video.batのやつらをダブルクリックするとコマンドラインが開くのでそこにURLを貼り付けてEnter押すだけ。
 
-動画をダウンロードしたい時は。
+例：動画をダウンロードしたい時
 
 １ －　_Section.batを起動する
 
