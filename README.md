@@ -158,7 +158,7 @@ _Section.bat | 指定した時間範囲のみをDL | MP4
 <br>
 <br>
 
-# 全チャンネルの動画をダウンロードする方法
+# チャンネルの全動画をダウンロードする方法
 
 ![4](https://github.com/keimaruO/kirinuki_dl/assets/91080250/bb1d492c-faf7-4e1e-83e8-cdc8c17a6a44)
 
