@@ -101,7 +101,7 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 **例 ： 動画をダウンロードしたい時。**
 
 ```bash
-> １ －　_Section.batを起動する
+> １ －　_Video.batを起動する
 
 > ２ －　URLを貼り付けてEnter
 
