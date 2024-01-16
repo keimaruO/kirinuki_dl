@@ -31,12 +31,12 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 
 
 
-## このプロジェクトをダウンロードする ※画像はこのページの上部です
+## このプロジェクトを当ページ上部からダウンロードする
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/9f4d7d1e-f629-4af1-bf0a-692569d5f8b1)
 
 
-## 次に下記のリンクを開いてyt-dlp.exeをクリックでダウンロード
+## 次に下記リンクを開いてyt-dlp.exeをクリックでダウンロード
 
 https://github.com/yt-dlp/yt-dlp/releases/
 
