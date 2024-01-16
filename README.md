@@ -239,6 +239,7 @@ yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMO
 基本的に`yt-dlp --cookies-from-browser firefox`の後ろにチャンネルの動画URLか、liveのURL、再生リストのURLを貼ればメン限動画もDLされると思います。
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/217a0cbe-febc-45e2-b88e-0374bd7c67e4)
+
 ダウンロードしたいとこを選択してURLをコピーすればshortsでも同様にいけます。
 
 <br>
