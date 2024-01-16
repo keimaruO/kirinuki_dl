@@ -8,48 +8,55 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 
 ちなみに下記の手順を進めていくと、最終的に下記の事ができます。
 
-- ライブ配信中に追いかけ録画
-- 動画・音声だけダウンロード(DL)
-- 特定の範囲だけDL
+- [x] ライブ配信中に追いかけ録画
+- [x] 動画・音声だけダウンロード(DL)
+- [x] 特定の範囲だけDL
+- [x] チャンネルすべての動画をダウンロード
 
 
-デフォルトだと最高画質/音質でDLします。出力されるファイル形式は動画ならmp4,音声ならwav
+デフォルトで最高画質/音質でダウンロードします。出力されるファイル形式は動画ならmp4　音声ならwav
 
-自分で好きなようにファイル形式、保存先変えれます。
+後から自分で好きなようにファイル拡張子や保存先なども変えれます。
 
 
 # インストール方法
 
-まず前提としてPythonをいれる必要があります。簡単です
+まず前提としてPythonをいれる必要があります。所要時間は8分ぐらい？
 
-> [Pythonインストール方法](https://prog-8.com/docs/python-env-win)
+- 
+>
+-  [Pythonインストール方法](https://prog-8.com/docs/python-env-win)
+>
+- 
+
+
 
 ## このプロジェクトをダウンロードする ※画像はこのページの上部です
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/9f4d7d1e-f629-4af1-bf0a-692569d5f8b1)
 
 
-次に下記のリンクを開いてyt-dlp.exeをクリックでダウンロード
+## 次に下記のリンクを開いてyt-dlp.exeをクリックでダウンロード
 
 https://github.com/yt-dlp/yt-dlp/releases/
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/ae976dc8-d68e-4b9d-89c4-5cf838cf5eda)
 
 
-次に下記のリンクを開いてffmpeg-n6.0-latest-win64-gpl-6.0.zipをクリックでダウンロード
+## 次に下記のリンクを開いてffmpeg-n6.0-latest-win64-gpl-6.0.zipをクリックでダウンロード
 
 https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/5c309489-25c6-45f7-93f1-f0d8c36489dc)
 
 
-そして上のやつでダウンロードしてきたの者たちを解凍し、下の画像のように配置すればOK
+## そして上のやつでダウンロードしてきたの者たちを解凍し、下の画像のように配置すればOK
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/0dc46007-870b-4394-a069-a5e2a13df082)
 
 
 
-ショートカットをデスクトップとか、わかりやすいところに置いておいて下さい。
+## ショートカットをデスクトップとか、わかりやすいところに置いておいて下さい。
 
 # 基本的な使い方
 
@@ -107,7 +114,48 @@ _Audio.bat　とか　_Video.batのやつらをダブルクリックするとコ
 - 4行目　xx:xx-xx:xx
 - ...
 
-# カスタムのやり方
+# 全チャンネルの動画をダウンロードする方法
+
+![4](https://github.com/keimaruO/kirinuki_dl/assets/91080250/bb1d492c-faf7-4e1e-83e8-cdc8c17a6a44)
+
+エクスプローラー上部にあるURLみたいなところを押して、cmdと入力してEnterを押すと。そのフォルダパスでコマンドプロンプトが開きます。
+
+そして　yt-dlp [チャンネルURL]　を入力すると全ての動画がダウンロードされます。※メン限は含まない
+
+例
+```
+yt-dlp https://www.youtube.com/@MomosuzuNene
+```
+
+基本的にはないですが、もしダウンロード中に中断されてしまったり、エラーが出た場合は[チャンネルURL]ところを再生リストのURLにすると再生リストの順でダウンロードされます。
+
+初めから再生リストでやると失敗した際に再開しやすいのかも？です。
+
+[YouTube™ の複数選択 Chrome拡張機能](https://chromewebstore.google.com/detail/youtube-%E3%81%AE%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9E/gpgbiinpmelaihndlegbgfkmnpofgfei?hl=ja)
+
+1つ1つ再生リストにぶちこむのめんどいので、この拡張機能を活用してみてください。
+
+## メンバー限定の動画をダウンロードしたい場合
+
+メンバーに加入しているブラウザを指定するだけでいけます。※メンバーに加入してない場合はもちろんできません。
+
+例：Chromeの場合
+```
+yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
+```
+
+例：Firefoxの場合
+```
+yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
+```
+
+※ワイのPC環境だとChromeのコマンドがうまく機能しませんでした、うまくいかない場合はFirefoxでお試しください。
+
+
+
+
+
+# その他、自分好みにカスタムする方法
 
 ファイル形式をmp3とかopusとかにしたい場合は.pyそのコードを変更すればいいだけです。これまじで簡単です。
 
