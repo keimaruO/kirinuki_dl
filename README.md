@@ -13,10 +13,14 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 <br>
 ちなみに下記の手順を進めていくと、最終的に下記の事ができます。
 
-- [x] ライブ配信中に追いかけ録画
-- [x] 動画・音声だけダウンロード(DL)
-- [x] 特定の範囲だけDL
-- [x] チャンネルすべての動画をダウンロード メン限も可
+<br>
+
+- [x] **ライブ配信中に追いかけ録画**
+- [x] **動画・音声だけダウンロード(DL)**
+- [x] **特定の範囲だけDL**
+- [x] **チャンネルすべての動画をダウンロード メン限も可**
+
+<br>
 
 デフォルトで最高画質/音質でダウンロードします。出力されるファイル形式は動画ならmp4　音声ならwav
 
@@ -90,6 +94,8 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 <br>
 
  _Audio.bat　とか _Video.batをダブルクリックしてコマンドラインを開き、URLを貼り付けてEnterを押せばOK
+
+ 
  
 
 <br>
@@ -119,9 +125,9 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 > ２ －　_Section.batを起動する
  
-> ３ －　保存先はoutputフォルダ内に保存されてます。
+> ３ －　ダウンロードが完了したら閉じる。保存先はoutputフォルダ内に保存されてます。
 
-以上。
+
 ```
 
 <br>
@@ -180,7 +186,19 @@ _Section.bat | 指定した時間範囲のみをDL | MP4
 **例 ：　チャンネル全部の動画をダウンロード**　※メン限は含まない
 
 ```bash
-yt-dlp https://www.youtube.com/@MomosuzuNene
+yt-dlp https://www.youtube.com/@MomosuzuNene/videos
+```
+
+<br>
+<br>
+<br>
+<br>
+
+
+**例 ：　チャンネル全部の動画をダウンロード**　※メン限は含まない
+
+```bash
+yt-dlp https://www.youtube.com/@MomosuzuNene/streams
 ```
 
 <br>
@@ -217,6 +235,9 @@ yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMO
 <br>
 
 ※ワイのPC環境だとChromeのコマンドがうまく機能しませんでした、うまくいかない場合はFirefoxでお試しください。
+
+基本的に`yt-dlp --cookies-from-browser firefox`の後ろにチャンネルの動画URLか、liveのURL、再生リストのURLを貼ればメン限動画もDLされると思います。
+
 
 <br>
 <br>
