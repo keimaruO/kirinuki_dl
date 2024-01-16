@@ -55,6 +55,8 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 _Audio.bat　とか　_Video.batのやつらをダブルクリックするとコマンドラインが開くのでそこにURLを貼り付けてEnter押すだけ。
 
+※ _Section.batだけ、実行する前にdlurl.txtをメモ帳などで開いて、URLと時間範囲を指定する必要があります。　詳しくは下記に記載
+
 例：動画をダウンロードしたい時
 
 １ －　_Section.batを起動する
@@ -67,7 +69,7 @@ _Audio.bat　とか　_Video.batのやつらをダブルクリックするとコ
 出力先はひとつ前の画像、そのばしょにあります。ダウンロードが終わった後は別の場所にバックアップするのが汚くならないのでおすすめです。
 　
 
-
+# 詳しい使い方
 
 ## _Audio.bat
 
@@ -107,7 +109,7 @@ _Audio.bat　とか　_Video.batのやつらをダブルクリックするとコ
 
 # カスタムのやり方
 
-ファイル形式をmp3とかopusとかにしたい場合はそのコードを変更すればいいだけです。これまじで簡単です。
+ファイル形式をmp3とかopusとかにしたい場合は.pyそのコードを変更すればいいだけです。これまじで簡単です。
 
 拡張子が.pyとなってるのがPythonのファイル形式で、メモ帳やテキストエディターでソースコードを開いてwavのところを変更すればおｋ
 
@@ -119,4 +121,4 @@ chatGPTのリンク貼っときます。https://chat.openai.com/
 
 ではまた。
 
-issueでもいいし、https://linktr.ee/keimaruのマシュマロでもTwitterでもいいのでなにかあれば気軽にどぞ！
+質問などはissueでもOKです。https://linktr.ee/keimaruのマシュマロでもTwitterでもいいのでなにかあれば気軽にどぞ！
