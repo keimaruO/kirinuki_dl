@@ -17,31 +17,26 @@ yt-dlpを使用して、切り抜き動画制作に特化したダウンロー�
 
 自分で好きなようにファイル形式、保存先変えれます。
 
-※1時間で作ったのでおてやわらかに、でもくっそ便利なはず
 
 # インストール方法
 
 まず前提としてPythonをいれる必要があります。簡単です
 
-> [Python](https://prog-8.com/docs/python-env-win)　※インストール方法が書いてあるサイト
+> [Pythonインストール方法](https://prog-8.com/docs/python-env-win)
 
 ## このプロジェクトをダウンロードする ※画像はこのページの上部です
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/9f4d7d1e-f629-4af1-bf0a-692569d5f8b1)
 
 
-次に
-
-下記のリンクを開いてyt-dlp.exeをクリックでダウンロード
+次に下記のリンクを開いてyt-dlp.exeをクリックでダウンロード
 
 https://github.com/yt-dlp/yt-dlp/releases/
 
 ![image](https://github.com/keimaruO/kirinuki_dl/assets/91080250/ae976dc8-d68e-4b9d-89c4-5cf838cf5eda)
 
 
-次に
-
-下記のリンクを開いてffmpeg-n6.0-latest-win64-gpl-6.0.zipをクリックでダウンロード
+次に下記のリンクを開いてffmpeg-n6.0-latest-win64-gpl-6.0.zipをクリックでダウンロード
 
 https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
@@ -54,7 +49,7 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 
 
-ショートカットをデスクトップとか、わかりやすいところに置いておいて下さい。ファイル名も自分がわかりやすいのに変えてもおｋ
+ショートカットをデスクトップとか、わかりやすいところに置いておいて下さい。
 
 # 基本的な使い方
 
@@ -68,37 +63,39 @@ TwitterのスペースとかTwitchなどたしか1000以上のサイトに対応
 
 ## _Audio.bat
 
-音声だけダウンロードします。出力はWAV
+- 何をするか：音声だけダウンロードします。出力はWAV
 
 ## _Video.bat
 
-動画だけダウンロードします。出力はMP4
+- 何をするか：動画だけダウンロードします。出力はMP4
 
 ## _Live-wait.bat
 
-ライブ配信中に追いかけダウンロード。出力はMP4
+- 何をするか：ライブ配信中に追いかけダウンロード。出力はMP4
 
 枠さえたっていれば配信が開始してなくても、配信開始されると自動でダウンロード開始する
 
-## _Section.bat　※ちょい使い方違う
+## _Section.bat　※使い方少し違う
 
-指定した時間範囲だけをダウンロード。
+- 何をするか：指定した時間範囲だけをダウンロード。
 
-dlurl.txtの1行目にURL、2行目に時間の範囲指定を書く。
+#### 使い方
 
-で、
+１ －　dlurl.txtをメモ帳などで開き、1行目にURL、2行目に時間の範囲指定を書く。
 
-で、_Section.batを起動する
+２ －　書いたら　_Section.batを起動する
 
-ちな、dlurl.txtに複数記入してもおｋ
+３ －　保存先は同じディレクトリのoutputフォルダ内に保存されてます。
+
+以上。
+
+ちなみに、dlurl.txtに複数記入してもおｋ
 
 - 1行目　URL
 - 2行目　xx:xx-xx:xx
 - 3行目　URL
 - 4行目　xx:xx-xx:xx
 - ...
-
-って感じ、この保存先は同じディレクトリのoutputフォルダ内に保存されます。
 
 # カスタムのやり方
 
