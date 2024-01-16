@@ -90,113 +90,156 @@ https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
  _Audio.bat　とか _Video.batをダブルクリックしてコマンドラインを開き、URLを貼り付けてEnterを押せばOK
  
-<br>
-
-_Section.batは先にdlurl.txtをメモ帳などで開き、URLと時間範囲を指定する必要があります。
 
 <br>
 <br>
 <br>
+
+
+
+
+**例 ： 動画をダウンロードしたい時。**
+
+```bash
+> １ －　_Section.batを起動する
+
+> ２ －　URLを貼り付けてEnter
+
+> ３ －　ダウンロードが完了したら閉じる。
+```
+
 <br>
 <br>
 
-> 例　：　動画をダウンロードしたい時。
+**例 ： 指定した時間範囲をダウンロードしたい時。**
 
-１ －　_Section.batを起動する
+```bash
+> １ －　dlurl.txtをメモ帳などで開き、1行目にURL、2行目に時間の範囲指定を書く。
 
-２ －　ダウンロードしたいURLを貼り付けてEnter❣
-
-３ －　ダウンロードが完了したら閉じて大丈夫です。ファイルは同じ場所に出力されます。
-
-<br>
-<br>
-
-出力先はひとつ前の画像、そのばしょにあります。ダウンロードが終わった後は別の場所にバックアップするのが汚くならないのでおすすめです。
-　
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-# 詳しい使い方
-
-## _Audio.bat
-
-- 音声のみダウンロード（出力はWAV）
-
-## _Video.bat
-
-- 動画のみダウンロード（出力はMP4）
-
-## _Live-wait.bat
-
-- ライブ配信中の動画を追いかけてダウンロード（出力はMP4）
-
-枠さえたっていれば配信が開始してなくても、配信開始されると自動でダウンロード開始する
-
-## _Section.bat　※使い方少し違う
-
-- 指定した時間範囲のみをダウンロード
-
-#### 使い方
-
-１ －　dlurl.txtをメモ帳などで開き、1行目にURL、2行目に時間の範囲指定を書く。
-
-２ －　書いたら　_Section.batを起動する
-
-３ －　保存先は同じディレクトリのoutputフォルダ内に保存されてます。
+> ２ －　_Section.batを起動する
+ 
+> ３ －　保存先はoutputフォルダ内に保存されてます。
 
 以上。
+```
+
+<br>
+<br>
 
 ちなみに、dlurl.txtに複数記入してもおｋ
+```bash
+1行目　URL
+2行目　xx:xx-xx:xx
+3行目　URL
+4行目　xx:xx-xx:xx
+...
+```
 
-- 1行目　URL
-- 2行目　xx:xx-xx:xx
-- 3行目　URL
-- 4行目　xx:xx-xx:xx
-- ...
+<br>
+<br>
+
+**_Live-wait.bat**
+
+```bash
+枠さえたっていれば配信が開始してなくても、配信開始されると自動でダウンロード開始する
+```
+<br>
+<br>
+<br>
+
+ファイル名 | 何をする | 出力形式
+-----------| ------------| ------------
+_Audio.bat | 音声のみDL | WAV
+_Video.bat | 動画のみDL | MP4
+_Live-wait.bat | ライブ配信中の動画を追いかけてDL | MP4
+_Section.bat | 指定した時間範囲のみをDL | MP4
+
+<br>
+<br>
+<br>
 
 # 全チャンネルの動画をダウンロードする方法
 
 ![4](https://github.com/keimaruO/kirinuki_dl/assets/91080250/bb1d492c-faf7-4e1e-83e8-cdc8c17a6a44)
 
-エクスプローラー上部にあるURLみたいなところを押して、cmdと入力してEnterを押すと。そのフォルダパスでコマンドプロンプトが開きます。
+※エクスプローラー上部にあるURLみたいなところを押して、cmdと入力してEnterを押すと。そのフォルダパスでコマンドプロンプトが開きます。
 
-そして　yt-dlp [チャンネルURL]　を入力すると全ての動画がダウンロードされます。※メン限は含まない
+<br>
+<br>
 
-## 例 ：　動画をダウンロードしたい場合
+## コマンド
 
-```
+<br>
+<br>
+
+`yt-dlp [チャンネルURL]`　を入力すると全ての動画がダウンロードされます。　　※メン限は含まない
+
+<br>
+
+**例 ：　チャンネル全部の動画をダウンロード**　※メン限は含まない
+
+```bash
 yt-dlp https://www.youtube.com/@MomosuzuNene
 ```
 
-基本的にはないですが、もしダウンロード中に中断されてしまったり、エラーが出た場合は[チャンネルURL]ところを再生リストのURLにすると再生リストの順でダウンロードされます。
+<br>
+<br>
+<br>
+<br>
 
-初めから再生リストでやると失敗した際に再開しやすいのかも？です。
+**例 ：　再生リストをダウンロードしたい場合**　※メン限は含まない
 
-[YouTube™ の複数選択 Chrome拡張機能](https://chromewebstore.google.com/detail/youtube-%E3%81%AE%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9E/gpgbiinpmelaihndlegbgfkmnpofgfei?hl=ja)
+```bash
+yt-dlp https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
+```
 
-1つ1つ再生リストにぶちこむのめんどいので、この拡張機能を活用してみてください。
+<br>
+<br>
+<br>
+<br>
+<br>
 
-## メンバー限定の動画をダウンロードしたい場合
+**例 ：　メンバー限定の動画をダウンロードしたい場合**
 
-メンバーに加入しているブラウザを指定するだけでいけます。※メンバーに加入してない場合はもちろんできません。
-
-例：Chromeの場合
+Chromeの場合
 ```
 yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
 ```
 
-例：Firefoxの場合
+<br>
+
+Firefoxの場合
 ```
 yt-dlp --cookies-from-browser firefox https://www.youtube.com/playlist?list=UUMOAWSyEs_Io8MtpY3m-zqILA
 ```
+
+<br>
 
 ※ワイのPC環境だとChromeのコマンドがうまく機能しませんでした、うまくいかない場合はFirefoxでお試しください。
+
+<br>
+<br>
+
+> [!NOTE]  
+> 基本的にはないですが、もしダウンロード中に中断されてしまったり、エラーが出た場合は`[チャンネルURL]`ところを`[再生リストのURL]`にすると再生リストの順番でダウンロードされます。
+> 初めから再生リストでやると失敗した際に再開しやすいのかも？です。
+> 
+> 一つ一つ再生リストにぶちこむのめんどいので、この拡張機能を活用してみてください。超効率よく再生リストが作れます。
+> 
+> [YouTube™ の複数選択 Chrome拡張機能](https://chromewebstore.google.com/detail/youtube-%E3%81%AE%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9E/gpgbiinpmelaihndlegbgfkmnpofgfei?hl=ja)
+> 
+> そしてもう一つおすすめの拡張機能を紹介します。
+>
+> チャンネルページで拡張機能を有効にするとチャンネル全てのメン限動画をまとめた再生リストを表示できます。
+> 
+> [メン限動画プレイリストView](https://chromewebstore.google.com/detail/%E3%83%A1%E3%83%B3%E9%99%90%E5%8B%95%E7%94%BB%E3%83%97%E3%83%AC%E3%82%A4%E3%83%AA%E3%82%B9%E3%83%88view/alipjbeolhembeklphfcehbkgncdlnom)
+
+
+
+
+
+
+
 
 
 
