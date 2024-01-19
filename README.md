@@ -222,21 +222,23 @@ yt-dlp https://www.youtube.com/@MomosuzuNene/streams
 <br>
 <br>
 
-**例 ：　ダウンロード先を指定したい場合**
+**ダウンロード先を指定したい場合**
 
 
 ```bash
 yt-dlp -o "保存先のパス/%(title)s.%(ext)s"
 ```
 
-このようにすればいけます。`保存先のパス`のところに、保存したい場所のフォルダパスを貼り付ければOK　[保存パスのコピーのやり方](https://dekiru.net/article/24456/#:~:text=A%20%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%83%90%E3%83%BC%E3%81%AB%E8%A1%A8%E7%A4%BA,%E3%80%8C%E3%83%91%E3%82%B9%E3%80%8D%E3%81%A8%E8%A8%80%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
+このようにすればいけます。`保存先のパス`のところに、保存したい場所のフォルダパスを貼り付ければOK
+
+[保存パスのコピーのやり方](https://dekiru.net/article/24456/#:~:text=A%20%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%83%90%E3%83%BC%E3%81%AB%E8%A1%A8%E7%A4%BA,%E3%80%8C%E3%83%91%E3%82%B9%E3%80%8D%E3%81%A8%E8%A8%80%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
+
 
 <br>
 <br>
 <br>
-<br>
 
-**例 ：　Eドライブにあるgamesフォルダ内に保存したい場合**
+例 ：　Eドライブにあるgamesフォルダ内に保存したい場合
 
 ```bash
 yt-dlp -o "E:\games/%(title)s.%(ext)s" https://www.youtube.com/@MomosuzuNene/streams
