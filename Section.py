@@ -1,5 +1,7 @@
 import os
 import subprocess
+import tkinter as tk
+from tkinter import filedialog
 
 # 現在のスクリプトのディレクトリを取得
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -11,6 +13,16 @@ yt_dlp_dir = "yt-dlp"
 DLURL_FILE = "dlurl.txt"
 
 def main():
+    # ダウンロード先のディレクトリを選択
+    root = tk.Tk()
+    root.withdraw()  # メインウィンドウを表示しない
+    download_dir = filedialog.askdirectory(title="ダウンロード先を選択してください")
+
+    # ダウンロード先のディレクトリが選択されなかった場合は終了
+    if not download_dir:
+        print("ダウンロード先が選択されていません。プログラムを終了します。")
+        return
+
     # dlurl.txtファイルを開く
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with open(DLURL_FILE, "r") as file:
@@ -33,7 +45,7 @@ def main():
         # 時間範囲の場合
         else:
             start_time, end_time = line.split("-")
-            output_path = f'output/{output_counter}%(title)s.%(ext)s'
+            output_path = os.path.join(download_dir, f'{output_counter}%(title)s.%(ext)s')
             output_counter += 1
 
             # yt-dlpコマンドを実行
@@ -50,6 +62,8 @@ def main():
             print("Executing command:", cmd)
             subprocess.run(cmd, shell=True)
 
+    # ダウンロードが完了したら、エクスプローラーでダウンロード先を開く
+    os.system(f"explorer {os.path.abspath(download_dir)}")
 
 if __name__ == "__main__":
     main()
