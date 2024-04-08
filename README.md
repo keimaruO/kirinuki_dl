@@ -83,6 +83,8 @@ https://github.com/yt-dlp/yt-dlp/releases/
 
 ## ４　次に、下記リンクを開いて`ffmpeg-n6.0-latest-win64-gpl-6.0.zip`をダウンロード
 
+※バージョン更新されて名前が違うかもしれません。とりま容量が一番大きいやつ選んどけばおｋ　かと。
+
 https://github.com/yt-dlp/FFmpeg-Builds/releases/tag/latest
 
 <br>
